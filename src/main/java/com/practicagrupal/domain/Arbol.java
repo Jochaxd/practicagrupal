@@ -16,9 +16,9 @@ public class Arbol implements Serializable { //serializacion funciona para almac
     
     private static final long serialVersionUID = 1L; //para poder hacer el ciclo de la sumatoria del idArbol
     
-    @Id //tabla categoria tiene una llave o identificador que va a ser el ID
+    @Id //tabla arbol tiene una llave o identificador que va a ser el ID
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Los valores generados que tipo de estrategia utilizan, identico = sea igual en la BD y en la clase
-    @Column(name="id_arbol") //Decir cual es el nombre de la columna en la base de datos.
+    @Column(name="id_arbol") //Decir cual es el nombre de la coilumna en la base de datos.
     private long idArbol;
     private String nombreComun;
     private String tipoFlor;
@@ -32,6 +32,7 @@ public class Arbol implements Serializable { //serializacion funciona para almac
         this.nombreComun = nombreComun;
         this.tipoFlor = tipoFlor;
         this.durezaMadera = durezaMadera;
+
     }
     
     

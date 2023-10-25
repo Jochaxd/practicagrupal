@@ -5,10 +5,16 @@ import java.util.List;
 
 public interface ArbolService {
     
-    //Se declara un método para obtener un ArrayList de Objetos Categoria
-    //Objetos vienen de la base de datos, todos los registros
+    // Se obtiene un listado de arbols en un List
+    public List<Arbol> getArbols();
     
-    public List<Arbol> getArbol(boolean activos);
+   // Se obtiene un Arbol, a partir del id de un arbol
+    public Arbol getArbol(Arbol arbol);
     
-    //Abajo se colocarán los métodos para hacer el CRUD de categorias, pero en semana 6
+    // Se inserta un nuevo arbol si el id del arbol esta vacío
+    // Se actualiza un arbol si el id del arbol NO esta vacío
+    public void save(Arbol arbol);
+    
+    // Se elimina el arbol que tiene el id pasado por parámetro
+    public void delete(Arbol arbol);
 }

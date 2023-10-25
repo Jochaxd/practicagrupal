@@ -11,7 +11,7 @@
 	<groupId>com.version1</groupId>
 	<artifactId>practicagrupal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>practicagrupal</name>
+	<name>practica01</name>
 	<description>Práctica Grupal - Grupo 3</description>
 	<properties>
 		<java.version>20</java.version>
