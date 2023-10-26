@@ -112,7 +112,7 @@
             </div>
         </section>
 
-        <!-- 4 Fragmento que se utiliza en la página modifca.html -->
+        <!-- 4 Fragmento que se utiliza en modifica.html. Sirve para editar los campos de la tabla árbol -->
         <section th:fragment="editarArbol">
             <div class="row">
                 <div class="col-md-2"></div>
@@ -135,18 +135,22 @@
                                             </div>
                                             <div class="card-body">
                                                 <div class="mb-3">
-                                                    <label for="descripcion">[[#{arbol.descripcion}]]</label>
+                                                    <label for="nombreComun">[[#{arbol.nombreComun}]]</label>
                                                     <input type="text" class="form-control" 
-                                                           name="descripcion" th:field="*{descripcion}"
+                                                           name="nombreComun" th:field="*{nombreComun}"
                                                            required="true">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="activo">[[#{arbol.activo}]]</label>
-                                                    <input class="form-check-input" 
-                                                           type="checkbox" 
-                                                           name="activo" 
-                                                           id="activo"
-                                                           th:field="*{activo}">
+                                                    <label for="tipoFlor">[[#{arbol.tipoFlor}]]</label>
+                                                    <input type="text" class="form-control" 
+                                                           name="tipoFlor" th:field="*{tipoFlor}"
+                                                           required="true">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="durezaMadera">[[#{arbol.durezaMadera}]]</label>
+                                                    <input type="text" class="form-control" 
+                                                           name="durezaMadera" th:field="*{durezaMadera}"
+                                                           required="true">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="imagen">[[#{arbol.rutaImagen}]]</label>
