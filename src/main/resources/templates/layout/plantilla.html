@@ -17,7 +17,7 @@
     </head>
     <body>
         <header th:fragment="header" class="header">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
                 <div class="container">
                     <a th:href="@{/}" class="navbar-brand">[[#{aplicacion.titulo}]]</a>
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </nav>
-            <section id="main-header" class="py-2 bg-success text-white">
+            <section id="main-header" class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -46,12 +46,20 @@
                 </div>
             </section>
         </header>
-        <footer th:fragment="footer" class="bg-info text-white mt-5 p-2">
-            <div class="container">
-                <div class="col">
-                    <p class="lead text-center">
-                        &COPY;[[#{plantilla.derechos}]]
-                    </p>
+        <footer th:fragment="footer">
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <ul>
+                            <li><a href='#'>Términos</a></li>
+                            <li><a href='#'>Privacidad</a></li>
+                            <li><a href='#'>Contacto</a></li>
+                            <li><a href='#'></a></li>
+                            <p>
+                                &COPY;[[#{plantilla.derechos}]]
+                            </p>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
